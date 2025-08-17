@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поурочний план: Англійська для 7 класу</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4">
+
+    <!-- Main container for content -->
+    <div class="max-w-4xl mx-auto py-8 px-4">
+        
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-extrabold text-blue-800 mb-2">Поурочний план</h1>
+            <p class="text-2xl text-blue-600 font-semibold">Англійська мова, 7 клас</p>
+            <p class="text-lg text-gray-600 mt-2">На основі НМК Solutions, 20 занять</p>
+        </header>
+
+        <!-- Progress bar section -->
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">Ваш прогрес</h2>
+            <div class="w-full bg-gray-200 rounded-full h-4">
+                <div id="progressBar" class="bg-green-500 h-4 rounded-full transition-all duration-500 ease-in-out" style="width: 0%;"></div>
+            </div>
+            <p id="progressText" class="text-right mt-2 text-lg font-bold text-green-700">0% завершено</p>
+        </div>
+
+        <!-- Main content section with a grid layout for units -->
+        <main class="grid gap-8">
+            
+            <!-- Unit 1 -->
+            <section id="unit-1" class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Unit 1: My Life & Routines</h2>
+                <!-- Lesson 1 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 mb-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson1" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 1: Introduction & Free Time</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Хобі, вільний час, повсякденні дії.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> Present Simple (стверджувальні речення).</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Знайомство, обговорення улюбленого дозвілля.</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Впр. з Workbook.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Lesson 2 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson2" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 2: Daily Routines</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Щоденні рутини, часові вирази.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> Present Simple (заперечні, питальні речення).</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Опис свого розпорядку дня, аудіювання.</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Написати 5 речень про ідеальний день.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Unit 2 -->
+            <section id="unit-2" class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Unit 2: People & Descriptions</h2>
+                <!-- Lesson 3 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 mb-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson3" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 3: Appearance & Personality</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Опис зовнішності та рис характеру.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> Дієслово "to be".</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Опис однокласників, читання описів.</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Описати члена родини або друга.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Lesson 4 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson4" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 4: Family & Friends</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Члени сім'ї, стосунки в родині.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> Possessive 's.</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Створення сімейного дерева, рольові ігри.</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Підготувати розповідь про свою сім'ю.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Unit 3 -->
+            <section id="unit-3" class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Unit 3: School & Learning</h2>
+                <!-- Lesson 5 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 mb-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson5" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 5: School Subjects & Activities</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Шкільні предмети, приналежності.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> Adverbs of frequency.</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Обговорення улюблених предметів, складання розкладу.</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Написати про свій розклад.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Lesson 6 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson6" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 6: Giving Opinions & Advice</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Фрази для висловлення думки.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> Should/Shouldn't.</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Дискусія про шкільні проблеми, надання порад.</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Написати 3 поради для нового учня.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Unit 4 -->
+            <section id="unit-4" class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Unit 4: Home & Neighbourhood</h2>
+                <!-- Lesson 7 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 mb-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson7" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 7: Rooms & Furniture</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Назви кімнат, меблі.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> There is / There are, Prepositions of place.</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Опис своєї кімнати.</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Намалювати кімнату та підписати предмети.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Lesson 8 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson8" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 8: My Ideal Home</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Прикметники для опису будинку.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> Have got / Has got.</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Обговорення "будинку мрії".</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Описати свій ідеальний дім.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Unit 5 -->
+            <section id="unit-5" class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Unit 5: Food & Drink</h2>
+                <!-- Lesson 9 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 mb-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson9" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 9: Food Groups & Meals</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Продукти харчування, прийоми їжі.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> Countable / Uncountable nouns.</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Сортування продуктів, обговорення здорового харчування.</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Скласти список продуктів.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Lesson 10 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson10" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 10: Quantifiers & Recipes</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Кількісні займенники.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> Some/any, much/many, a lot of.</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Робота з рецептами, рольові ігри.</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Написати рецепт улюбленої страви.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Unit 6 -->
+            <section id="unit-6" class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Unit 6: Places & Directions</h2>
+                <!-- Lesson 11 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 mb-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson11" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 11: Places in Town</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Міські об'єкти.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> Imperatives.</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Орієнтування по карті міста.</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Описати шлях від дому до школи.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Lesson 12 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson12" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 12: Asking & Giving Directions</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Фрази для запиту та надання напрямків.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> Повторення Imperatives.</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Робота в парах, створення власної карти.</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Створити "туристичний маршрут".</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Unit 7 -->
+            <section id="unit-7" class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Unit 7: Past Events</h2>
+                <!-- Lesson 13 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 mb-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson13" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 13: Past Routines & Events</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Дієслова, пов'язані з минулим.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> Past Simple (правильні дієслова).</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Розповіді про вчорашній день.</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Написати 5 речень про вихідні.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Lesson 14 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson14" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 14: Famous People & History</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Біографічні дані, події з історії.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> Past Simple (неправильні дієслова).</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Читання біографій.</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Дослідити та написати біографію.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Unit 8 -->
+            <section id="unit-8" class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Unit 8: Hobbies & Activities</h2>
+                <!-- Lesson 15 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 mb-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson15" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 15: Sports & Leisure Activities</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Види спорту, хобі.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> Present Simple.</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Обговорення улюблених видів спорту.</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Створити плакат.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Lesson 16 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson16" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 16: Describing Actions Now</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Дієслова дії.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> Present Continuous.</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Опис того, що відбувається зараз.</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Описати, що робить сім'я.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Unit 9 -->
+            <section id="unit-9" class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Unit 9: Future Plans</h2>
+                <!-- Lesson 17 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 mb-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson17" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 17: Plans & Intentions</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Вирази для майбутніх планів.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> Be going to.</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Обговорення планів на вихідні.</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Написати про свої плани на літо.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Lesson 18 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson18" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 18: Predictions & Spontaneous Decisions</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Фрази для передбачень.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> Will / Won't.</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Передбачення майбутнього.</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Написати 3 передбачення.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Unit 10 -->
+            <section id="unit-10" class="bg-white rounded-xl shadow-lg p-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Unit 10: Review & Consolidation</h2>
+                <!-- Lesson 19 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 mb-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson19" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 19: Revision of Grammar</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Повторення ключової лексики.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> Комплексне повторення Present Simple, Continuous, Past, Future.</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Ігри на граматику.</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Повторити матеріал.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Lesson 20 -->
+                <div class="flex items-center bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <input type="checkbox" data-lesson-id="lesson20" class="form-checkbox h-5 w-5 text-blue-600 rounded-full mr-4 cursor-pointer">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-800">Заняття 20: Project Work & Speaking Test</h3>
+                        <ul class="text-gray-600 mt-2 space-y-1">
+                            <li><span class="font-medium text-gray-700">Лексика:</span> Загальне повторення.</li>
+                            <li><span class="font-medium text-gray-700">Граматика:</span> Загальне повторення.</li>
+                            <li><span class="font-medium text-gray-700">Діяльність:</span> Презентація проектів, підсумковий усний тест.</li>
+                            <li><span class="font-medium text-gray-700">Д/З:</span> Відпочинок.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+        <!-- Footer Section -->
+        <footer class="text-center text-gray-500 mt-12 text-sm">
+            <p>&copy; 2025 Програма розроблена для навчальних цілей.</p>
+        </footer>
+    </div>
+
+    <script>
+        // JS for interactive progress tracking
+        document.addEventListener('DOMContentLoaded', () => {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const totalLessons = checkboxes.length;
+            const progressBar = document.getElementById('progressBar');
+            const progressText = document.getElementById('progressText');
+            const STORAGE_KEY = 'lesson-progress';
+
+            // Function to update the progress bar and text
+            function updateProgress() {
+                const completedLessons = Array.from(checkboxes).filter(cb => cb.checked).length;
+                const percentage = (completedLessons / totalLessons) * 100;
+                
+                progressBar.style.width = `${percentage}%`;
+                progressText.textContent = `${Math.round(percentage)}% завершено (${completedLessons}/${totalLessons})`;
+            }
+
+            // Function to save the state to local storage
+            function saveProgress() {
+                const completedState = Array.from(checkboxes).reduce((acc, cb) => {
+                    acc[cb.dataset.lessonId] = cb.checked;
+                    return acc;
+                }, {});
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(completedState));
+            }
+
+            // Function to load the state from local storage
+            function loadProgress() {
+                const savedState = JSON.parse(localStorage.getItem(STORAGE_KEY));
+                if (savedState) {
+                    checkboxes.forEach(cb => {
+                        const lessonId = cb.dataset.lessonId;
+                        if (savedState[lessonId]) {
+                            cb.checked = true;
+                        }
+                    });
+                }
+                updateProgress();
+            }
+
+            // Add event listeners to each checkbox
+            checkboxes.forEach(cb => {
+                cb.addEventListener('change', () => {
+                    updateProgress();
+                    saveProgress();
+                });
+            });
+
+            // Initial load of progress
+            loadProgress();
+        });
+    </script>
+</body>
+</html>
